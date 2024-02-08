@@ -27,6 +27,7 @@
           </div>
       </header>
   </div>
+  <!-- message form -->
   <div class="container col-xl-10 col-xl-8 px-4 py-2">
     <div class="row align-items-center g-lg-5 py-2">
       <div class="col-lg-7 text-center text-lg-start" style="color: rgb(57, 60, 84);">
@@ -36,41 +37,44 @@
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3" style="background-color: #A7AECE;" method="POST" action="https://data.endpoint.space/clsd3j1ck016908lbbpr3v86i">
           <div class="form-floating mb-1">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating mb-1">
-            <input type="Message" class="form-control" id="floatingMessage" placeholder="Message">
+            <input type="Message" class="form-control" id="floatingMessage" name="message" placeholder="Message">
             <label for="floatingMessage">Message</label>
           </div>
-            <button type="button" class="btn btn-primary" style="color: rgb(193, 198, 221); outline-color: rgb(57, 60, 84); background-color: rgb(57, 60, 84)">Submit</button>
+            <button type="submit" class="btn btn-primary" style="color: rgb(193, 198, 221); outline-color: rgb(57, 60, 84); background-color: rgb(57, 60, 84)">Submit</button>
         </form>
       </div>
     </div>
   </div>
-  <div class="container col-xl-10 col-xl-8 px-4 py-2">
+
+  <!-- URL submission -->
+   <div class="container col-xl-10 col-xl-8 px-4 py-2"> 
     <div class="row align-items-center g-lg-5 py-2">
       <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3" style="background-color: #A7AECE;" method="POST" action="https://data.endpoint.space/clsd3jhrg001608jo96unlcrk">
+        <form  method="POST" action="https://data.endpoint.space/clsd3jhrg001608jo96unlcrk" class="p-4 p-md-5 border rounded-3" style="background-color: #A7AECE;">
           <div class="form-floating mb-1">
-            <input type="email" class="form-control" id="floatingName" placeholder="Name">
+            <input type="text" class="form-control" id="floatingName"  name="Name" placeholder="Name">
             <label for="floatingName">Name</label>
           </div>
           <div class="form-floating mb-1">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="floatingInput"  name="email" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating mb-1">
-            <input type="Media" class="form-control" id="floatingMedia" placeholder="Media">
-            <label for="floatingMedia">Attach Media</label>
+            <input type="Media" class="form-control" id="floatingMedia" name="URL" placeholder="Media URL">
+            <label for="floatingMedia">Attach Media URL</label>
           </div>
-            <button type="button" class="btn btn-primary" style="color: rgb(193, 198, 221); outline-color: rgb(57, 60, 84); background-color: rgb(57, 60, 84)">Submit</button>
+            <button type="submit" class="btn btn-primary" class="p-4 p-md-5 border rounded-3" style="background-color: #A7AECE;">Submit</button>
         </form>
       </div>
       <div class="col-lg-7 text-center text-lg-start" style="color: rgb(57, 60, 84);">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-1" style="color: rgb(57, 60, 84);">Submit a Sloth</h1>
         <p class="col-lg-10 fs-4">Share a sloth you sighted with us.</p>
-      </div>
+      </div> 
+      
       
     </div>
     <small class="text-body-secondary">*By clicking Submit, you agree to the terms of use.</small>
